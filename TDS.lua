@@ -63,7 +63,7 @@ UtilitySection:Toggle({
             end
 
             local camcontroller = require(game:GetService("ReplicatedStorage").Content.Tower["Gatling Gun"].Animator.CameraController)
-            local camposition = camcontroller.resultand camcontroller.result.Position or camcontroller.position
+            local camposition = camcontroller.result and camcontroller.result.Position or camcontroller.position
 
             for i = 1, getgenv().multiplytimes do
                 ggchannel:fireServer("Fire",camposition,workspace:GetAttribute("Sync"),workspace:GetServerTimeNow())
