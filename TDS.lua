@@ -1,4 +1,3 @@
--- 源码公开的
 loadstring(game:HttpGet("https://raw.githubusercontent.com/YunLua/Lua/refs/heads/main/KFC.lua", true))()
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
 
@@ -64,7 +63,7 @@ UtilitySection:Toggle({
             end
 
             local camcontroller = require(game:GetService("ReplicatedStorage").Content.Tower["Gatling Gun"].Animator.CameraController)
-            local camposition = camcontroller.resultand camcontroller.result.Positionor camcontroller.position
+            local camposition = camcontroller.resultand camcontroller.result.Position or camcontroller.position
 
             for i = 1, getgenv().multiplytimes do
                 ggchannel:fireServer("Fire",camposition,workspace:GetAttribute("Sync"),workspace:GetServerTimeNow())
