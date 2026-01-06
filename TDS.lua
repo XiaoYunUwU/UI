@@ -28,7 +28,7 @@ UtilitySection:Paragraph({
 
 UtilitySection:Slider({
     Title = "单次射击次数",
-    Value = {Min = 1, Max = 60, Default = 5},
+    Value = {Min = 1, Max = 600, Default = 60},
     Step = 1,
     Callback = function(v)
         getgenv().multiplytimes = v
