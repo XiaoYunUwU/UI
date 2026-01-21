@@ -8,7 +8,7 @@ getgenv().enabled = false
 getgenv().hooked = false
 
 local Window = WindUI:CreateWindow({
-    Title = "云脚本 - TDS",
+    Title = "TDS",
     Size = UDim2.fromOffset(220, 270),
     Theme = "Dark",
 })
